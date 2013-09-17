@@ -1,0 +1,30 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>Waine's Shopping List</title>
+	<link rel="stylesheet" link="text/css" href="main.css" />		
+	
+</head>
+<body>
+	<div id="container">
+		<h1 id="logo">Waine's Shopping List</h1>
+		<div class="input">
+			<input type="text" value="" name="item" id="item" />
+<!-- 			<input type="reset" id="reset" style="display:none"/> -->
+			<input type="submit" value="Add to List" onClick="addItem()" />
+			<!-- <input type="submit" value="Remove First" onClick="removeFirst()" /> -->
+			<input type="submit" value="Remove by #" onClick="removeByIndex()" />
+			<input type="submit" value="Remove by Check" onClick="removeByCheck()" />
+			<input type="submit" value="Clear All" onClick="clearAll()" />
+		</div>
+		<div id="dialog">
+			<h2 id="response"></h2>
+		</div>
+		<div id="list_container">
+			<ol id="list">
+			</ol>
+		</div>	
+	</div>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
